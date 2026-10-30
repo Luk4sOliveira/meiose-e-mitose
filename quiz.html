@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quiz para revisar mitose e meiose.">
+  <title>Quiz | Caderno de biologia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">BIO</span><span>Caderno <small>de biologia</small></span></a>
+  <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="main-nav">
+    <a href="index.html">Início</a><a href="meiose.html">Meiose</a><a href="mitose.html">Mitose</a><a class="active" href="quiz.html">Quiz</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero quiz-hero">
+    <div>
+      <p class="eyebrow">CAPÍTULO 03 • REVISE O QUE APRENDEU</p>
+      <h1>Hora de <span>testar ideias</span></h1>
+      <p class="lead">Responda às perguntas e descubra o quanto você já sabe sobre divisão celular.</p>
+    </div>
+    <div class="image-placeholder page-image">
+      <div class="image-placeholder-inner"></div>
+      <img src="imagens/quiz.jfif" alt="">
+    </div>
+  </section>
+
+  <section class="section quiz-layout">
+    <div class="quiz-aside">
+      <p class="eyebrow">REVISÃO ATIVA</p>
+      <h2>Pense, escolha, confira.</h2>
+      <p>São 8 perguntas. Você pode alterar qualquer resposta antes de conferir o resultado.</p>
+      <a class="text-link" href="index.html">Voltar à página inicial</a>
+    </div>
+
+    <form id="quiz-form" class="quiz-form">
+      <fieldset class="question">
+        <legend><span>01</span> Qual é uma função importante da meiose?</legend>
+        <label><input type="radio" name="q1" value="a"><span>Produzir células do corpo para o crescimento</span></label>
+        <label><input type="radio" name="q1" value="b"><span>Formar gametas com metade do número de cromossomos</span></label>
+        <label><input type="radio" name="q1" value="c"><span>Duplicar o DNA sem que a célula se divida</span></label>
+      </fieldset>
+      <fieldset class="question">
+        <legend><span>02</span> Quantas células são formadas, geralmente, ao final da meiose?</legend>
+        <label><input type="radio" name="q2" value="a"><span>Duas diploides</span></label>
+        <label><input type="radio" name="q2" value="b"><span>Quatro haploides</span></label>
+        <label><input type="radio" name="q2" value="c"><span>Uma haploide</span></label>
+      </fieldset>
+      <fieldset class="question">
+        <legend><span>03</span> O que acontece na anáfase da mitose?</legend>
+        <label><input type="radio" name="q3" value="a"><span>As cromátides-irmãs se separam</span></label>
+        <label><input type="radio" name="q3" value="b"><span>Os cromossomos homólogos trocam segmentos</span></label>
+        <label><input type="radio" name="q3" value="c"><span>O DNA é duplicado pela primeira vez</span></label>
+      </fieldset>
+      <fieldset class="question">
+        <legend><span>04</span> Em que etapa da meiose pode ocorrer crossing-over?</legend>
+        <label><input type="radio" name="q4" value="a"><span>Prófase I</span></label>
+        <label><input type="radio" name="q4" value="b"><span>Metáfase II</span></label>
+        <label><input type="radio" name="q4" value="c"><span>Telófase II</span></label>
+      </fieldset>
+      <fieldset class="question">
+        <legend><span>05</span> Qual processo costuma conservar o número de cromossomos da célula inicial?</legend>
+        <label><input type="radio" name="q5" value="a"><span>Meiose</span></label>
+        <label><input type="radio" name="q5" value="b"><span>Mitose</span></label>
+        <label><input type="radio" name="q5" value="c"><span>Fecundação</span></label>
+      </fieldset>
+      <fieldset class="question">
+        <legend><span>06</span> Quantos cromossomos há normalmente em um gameta humano?</legend>
+        <label><input type="radio" name="q6" value="a"><span>23</span></label>
+        <label><input type="radio" name="q6" value="b"><span>46</span></label>
+        <label><input type="radio" name="q6" value="c"><span>92</span></label>
+      </fieldset>
+      <fieldset class="question">
+        <legend><span>07</span> Qual é uma função da mitose em organismos multicelulares?</legend>
+        <label><input type="radio" name="q7" value="a"><span>Reduzir cromossomos para formar gametas</span></label>
+        <label><input type="radio" name="q7" value="b"><span>Contribuir para o crescimento e a renovação de tecidos</span></label>
+        <label><input type="radio" name="q7" value="c"><span>Combinar os genes de dois gametas</span></label>
+      </fieldset>
+      <fieldset class="question">
+        <legend><span>08</span> Em qual divisão os cromossomos homólogos se separam?</legend>
+        <label><input type="radio" name="q8" value="a"><span>Meiose I</span></label>
+        <label><input type="radio" name="q8" value="b"><span>Meiose II</span></label>
+        <label><input type="radio" name="q8" value="c"><span>Citocinese da mitose</span></label>
+      </fieldset>
+
+      <div class="quiz-actions">
+        <button class="button" type="submit">Conferir respostas</button>
+        <button class="reset-button" type="reset">Limpar</button>
+      </div>
+      <div id="quiz-result" class="quiz-result" aria-live="polite" hidden></div>
+    </form>
+  </section>
+
+  <section class="next-banner">
+    <div>
+      <p class="eyebrow">CONTINUE ESTUDANDO</p>
+      <h2>Compare os dois processos</h2>
+      <p>Volte à visão geral para rever as diferenças principais.</p>
+    </div>
+    <a class="button button-light" href="index.html">Voltar para a página inicial</a>
+  </section>
+</main>
+
+<footer>
+  <a class="brand" href="index.html"><span class="brand-mark">BIO</span><span>Caderno <small>de biologia</small></span></a>
+  <div class="credits-footer">
+    <p>Trabalho realizado por</p>
+    <ul>
+      <li>Lukas Oliveira</li><li>Maria Eduarda Paulino</li><li>Luiz Henrique</li><li>Marina França</li><li>Flavio Pires</li>
+    </ul>
+  </div>
+  <p>Material de estudo • Mitose e meiose</p>
+  <span>© <span data-year></span></span>
+</footer>
+</body>
+</html>
